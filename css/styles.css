@@ -4,6 +4,12 @@ body {
   margin: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 :root {
   --second-color: #757575;
   --hover-color: #2196f3;
@@ -130,7 +136,7 @@ ul {
 
 /* добавляет марджин и удаляет марджин последнему элементу */
 .nav-contacts .header-item + .header-item {
-  margin-left: 20px;
+  margin-left: 50px;
 }
 
 .nav-mail,
@@ -162,8 +168,12 @@ ul {
 
 .hero {
   background-color: #2f303a;
+  text-align: center;
 }
 .hero-title {
+  max-width: 696px;
+  margin-left: auto;
+  margin-right: auto;
   color: var(--hero-color);
 
   font-weight: 900;
@@ -175,6 +185,7 @@ ul {
 }
 
 .hero-button {
+  margin-top: 30px;
   color: var(--hero-color);
   background-color: var(--hover-color);
 
@@ -197,6 +208,7 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .content-dscr {
   color: var(--second-color);
@@ -211,14 +223,50 @@ ul {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+
+  margin-bottom: 50px;
 }
+
+.content-list {
+  display: flex;
+}
+
+.content-item {
+  width: 270px;
+}
+
+.main-list {
+  display: flex;
+}
+
+.main-list .main-list-item + .main-list-item {
+  margin-left: 50px;
+}
+
 /* Команда */
+
+.main-team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  margin-bottom: 50px;
+}
+
+.team-img {
+  margin-bottom: 30px;
+}
 
 .team-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
+
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .team-dscr {
@@ -227,6 +275,16 @@ ul {
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
+
+  text-align: center;
+}
+
+.team-list {
+  display: flex;
+}
+
+.team-list .team-item + .team-item {
+  margin-left: 30px;
 }
 
 /* Footer */
@@ -243,6 +301,9 @@ ul {
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+
+  display: inline-block;
+  /* padding-top: 60px; */
 }
 
 .footer-logo.web {
@@ -256,6 +317,21 @@ ul {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
+  padding-top: 20px;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.address-contacts {
+  display: flex;
+  flex-direction: column;
+  margin-top: 9px;
 }
 
 .address-mail,
@@ -277,6 +353,7 @@ ul {
 .address-tel:focus {
   color: var(--hover-color);
 }
+
 /* -------------------------------------------------- */
 
 /* Страница портфолио */
@@ -302,6 +379,10 @@ ul {
   background-color: var(--hover-color);
 }
 
+.filters-list {
+  display: flex;
+}
+
 /* Проекты */
 
 .projects-img-list {
@@ -317,4 +398,13 @@ ul {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
+}
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projects-list > .projects-item {
+  flex-basis: calc(100% / 3);
 }
