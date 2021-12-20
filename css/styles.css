@@ -303,7 +303,6 @@ ul {
   letter-spacing: 0.03em;
 
   display: inline-block;
-  /* padding-top: 60px; */
 }
 
 .footer-logo.web {
@@ -358,9 +357,15 @@ ul {
 
 /* Страница портфолио */
 
-.filters-title,
-.projects-title {
-  display: none;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
 
 .filters-button {
@@ -381,9 +386,18 @@ ul {
 
 .filters-list {
   display: flex;
+  justify-content: center;
+}
+
+.filters-list .filters-item + .filters-item {
+  margin-left: 10px;
 }
 
 /* Проекты */
+
+.projects {
+  margin-top: 56px;
+}
 
 .projects-img-list {
   font-weight: 700;
@@ -403,8 +417,22 @@ ul {
 .projects-list {
   display: flex;
   flex-wrap: wrap;
+
+  margin-top: -30px;
+  margin-left: -30px;
 }
 
 .projects-list > .projects-item {
-  flex-basis: calc(100% / 3);
+  flex-basis: calc(100% / 3 -30px);
+
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card {
+  border-bottom: 1px solid #eeeeee;
 }
