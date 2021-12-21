@@ -49,6 +49,8 @@ ul {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .section {
@@ -68,6 +70,8 @@ ul {
 
 .header {
   border-bottom: 1px solid #ececec;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .logo {
@@ -169,6 +173,9 @@ ul {
 .hero {
   background-color: #2f303a;
   text-align: center;
+
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
   max-width: 696px;
@@ -193,6 +200,8 @@ ul {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+
+  padding: 10px 32px;
 }
 
 .hero-button:hover,
@@ -235,12 +244,20 @@ ul {
   width: 270px;
 }
 
+.content-list .content-item + .content-item {
+  margin-left: 30px;
+}
+
+.samples {
+  padding-top: 0;
+}
+
 .main-list {
   display: flex;
 }
 
 .main-list .main-list-item + .main-list-item {
-  margin-left: 50px;
+  margin-left: 30px;
 }
 
 /* Команда */
@@ -255,8 +272,9 @@ ul {
   margin-bottom: 50px;
 }
 
-.team-img {
-  margin-bottom: 30px;
+.team-box {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-title {
@@ -291,6 +309,9 @@ ul {
 
 .footer {
   background-color: var(--footer-background-color);
+
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-logo {
@@ -323,8 +344,6 @@ ul {
 .contacts {
   display: flex;
   flex-direction: column;
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .address-contacts {
@@ -357,6 +376,7 @@ ul {
 
 /* Страница портфолио */
 
+/* Убирает заголовки */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -376,6 +396,10 @@ ul {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+
+  padding: 6px 22px;
+
+  border-radius: 4px;
 }
 
 .filters-button:hover,
@@ -387,6 +411,7 @@ ul {
 .filters-list {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .filters-list .filters-item + .filters-item {
@@ -406,6 +431,15 @@ ul {
   letter-spacing: 0.06em;
 }
 
+.projects-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  margin-bottom: 3px;
+}
+
 .projects-dscr {
   color: var(--second-color);
 
@@ -418,15 +452,15 @@ ul {
   display: flex;
   flex-wrap: wrap;
 
-  margin-top: -30px;
-  margin-left: -30px;
+  margin-top: -20px;
+  margin-left: -20px;
 }
 
 .projects-list > .projects-item {
-  flex-basis: calc(100% / 3 -30px);
+  flex-basis: calc(100% / 3 -20px);
 
-  margin-top: 30px;
-  margin-left: 30px;
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
 .card-content {
@@ -434,5 +468,5 @@ ul {
 }
 
 .card {
-  border-bottom: 1px solid #eeeeee;
+  border: 1px solid #eeeeee;
 }
