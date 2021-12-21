@@ -42,7 +42,7 @@ ul {
 
 .button {
   cursor: pointer;
-  font-family: Roboto, sans-serif;
+  font-family: inherit, sans-serif;
 }
 
 .container {
@@ -51,11 +51,20 @@ ul {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+
+  /* альтернативная запись */
+
+  /* margin: 0 auto;
+  padding: 0 15px; */
 }
 
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+
+  /* альтернативная запись */
+
+  /* padding: 94px 0; */
 }
 
 /* Шапка */
@@ -70,8 +79,6 @@ ul {
 
 .header {
   border-bottom: 1px solid #ececec;
-  padding-top: 12px;
-  padding-bottom: 12px;
 }
 
 .logo {
@@ -118,8 +125,8 @@ ul {
 
   /* увеличивает ширину ховера через добавление падингов */
   display: block;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .nav-list:hover,
@@ -147,8 +154,8 @@ ul {
 .nav-tel {
   /* увеличивает ширину ховера через добавление падингов */
   display: block;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 
   color: var(--second-color);
   text-decoration: none;
@@ -452,15 +459,15 @@ ul {
   display: flex;
   flex-wrap: wrap;
 
-  margin-top: -20px;
-  margin-left: -20px;
+  margin-top: -30px;
+  margin-left: -30px;
 }
 
 .projects-list > .projects-item {
-  flex-basis: calc(100% / 3 -20px);
+  flex-basis: calc(100% / 3 - 30px);
 
-  margin-top: 20px;
-  margin-left: 20px;
+  margin-top: 30px;
+  margin-left: 30px;
 }
 
 .card-content {
