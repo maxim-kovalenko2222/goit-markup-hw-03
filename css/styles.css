@@ -345,7 +345,7 @@ ul {
   line-height: 1.71;
   letter-spacing: 0.03em;
 
-  padding-top: 20px;
+  margin-top: 20px;
 }
 
 .contacts {
@@ -356,6 +356,10 @@ ul {
 .address-contacts {
   display: flex;
   flex-direction: column;
+  margin-top: 9px;
+}
+
+.address-tel {
   margin-top: 9px;
 }
 
