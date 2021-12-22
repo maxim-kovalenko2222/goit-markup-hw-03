@@ -306,7 +306,17 @@ ul {
 
 .team-list {
   display: flex;
+
+  /* flex-wrap: wrap; */
+  /* margin-left: -30px; */
 }
+
+/* .team-item {
+  flex-basis: calc(100% / 4 - 30px);
+
+  margin-left: 30px;
+
+} */
 
 .team-list .team-item + .team-item {
   margin-left: 30px;
@@ -458,6 +468,8 @@ ul {
   line-height: 1.87;
   letter-spacing: 0.03em;
 }
+
+/* основа для построения сетки */
 
 .projects-list {
   display: flex;
